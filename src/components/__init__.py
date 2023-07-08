@@ -1,0 +1,1 @@
+#component is like a module like data reading from database i.e. data ingestion

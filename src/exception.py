@@ -1,6 +1,6 @@
 #for exception handling
 import sys
-import logging
+from src.logger import logging
 
 def error_message_detail(error,error_detail:sys):  #error= what msg I'm getting,#error_detail=present inside the sys
     _,_,exc_tb = error_detail.exc_info()  #this exc_tb variable tells in which file which line exception has occurred

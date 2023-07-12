@@ -20,5 +20,5 @@ jobs:
         docker build . -t rittik24/marks-predictor:latest
     - name: publish
       run: 
-        echo ${{ secrets.DOCKER_HUB_TOKEN }} | docker login -u "$rittik24" --password-stdin
+        docker login -u "rittik24" -p ${{secrets.DOCKER_HUB_TOKEN}}
         docker push rittik24/marks-predictor:latest

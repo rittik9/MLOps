@@ -6,10 +6,6 @@ from src.pipeline.predict_pipeline import CustomData,PredictPipeline
 app = Flask(__name__) #entry point
 
 
-
-# template_path = 'C:/Users/ritti/OneDrive/Desktop/MLOps/templates'
-# app = Flask(__name__, template_folder=template_path)
-
 ##Route for a home page
 @app.route('/')
 def index():

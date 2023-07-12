@@ -16,7 +16,8 @@ jobs:
     - name: checkout
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . -t rittik24/marks-predictor:latest
+      run: 
+        docker build . -t rittik24/marks-predictor:latest
     - name: publish
       run: 
         docker login -u rittik24 -p ${{secrets.DOCKER_HUB_TOKEN}}
